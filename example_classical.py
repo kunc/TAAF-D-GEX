@@ -11,7 +11,6 @@ from keras.utils import plot_model
 from keras.models import Model, load_model
 from keras.callbacks import TensorBoard, CSVLogger
 
-from taaf.taaf import *
 
 # set seed for better repeatability
 from numpy.random import seed as set_seed
@@ -22,9 +21,6 @@ seed = 42
 set_seed(seed)
 set_random_seed(seed)
 random.seed = seed
-
-
-custom_objects = {'ATU': ATU}
 
 data_path = './example_data'
 fname_train_y = osp.join(data_path, 'ddf_tg_dataset_small_example_train.h5')
@@ -87,17 +83,15 @@ n_hidden = 2  # number of hidden layers
 n_neurons = 300  # number of neurons in each hidden layer
 activation_function_name = 'sigmoid'
 dropout = 0.25  # 25 % of neurons won't be used each training epoch
-model_name = 'TAAF_demonstrator_small'
+model_name = 'classical_demonstrator_small'
 
 inputs = Input(shape=(in_size,), name='inputs')
 x = inputs
 for n in range(n_hidden):
-    x = taaf_dense(x, n_neurons, activation=activation_function_name, name='H' + str(n))
+    x = Dense(n_neurons, activation=activation_function_name, name='H' + str(n))(x)
     x = Dropout(dropout, seed=seed)(x)
 
-# the TAAF allows the output layer to have a nonlinear activation as well
-#  even for regression
-outputs = taaf_dense(x, out_size, activation=activation_function_name, name='outputs')
+outputs = Dense(out_size, activation='linear', name='outputs')(x)
 
 model = Model(inputs=inputs, outputs=outputs)
 optimizer = Nadam(lr=l_rate)
