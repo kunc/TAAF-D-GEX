@@ -18,7 +18,7 @@ average mean absolute error of **0.1340** which is a significant improvement ove
 the original D–GEX which achieves average mean absolute error **0.1637**.
 
 ## Data
-The used are the same as in [D-GEX](https://github.com/uci-cbcl/D-GEX) but
+The used data are the same as in [D-GEX](https://github.com/uci-cbcl/D-GEX) but
 are not provided here due to their size. The code used for preprocessing the data
 is  in folder `dataset_preparation`. Very small subset of the used dataset is provided
 for running the example.
