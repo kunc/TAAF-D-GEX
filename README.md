@@ -134,3 +134,8 @@ classical network.
 | ----------|:----------------:|----------------:|
 | TAAF      | **0.17866**      | **0.19068**     |
 | classical | 0.19045          |   0.20115       |
+
+
+
+## Reference
+Will be added when possible.
