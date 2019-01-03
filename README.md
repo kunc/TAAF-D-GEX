@@ -41,7 +41,8 @@ The example data represents a small subset of inferred target gene with
  without). The main difference is that the network consists of only
  300 neurons in each layer and thus create a bottleneck (which hampers
  the performance) in order to allow training the example quickly even
- without GPU acceleration or using a laptop GPU with small memory.
+ without GPU acceleration or using a laptop GPU with small memory
+ (The networks in paper have roughly 30x more weights).
 
 #### Classical network
 ![Visualization of architecture with classical activation functions](https://github.com/kunc/TAAF-D-GEX/raw/master/models/classical_demonstrator_small/classical_demonstrator_small_visualization.png "[Visualization of architecture with classical activation functions")
