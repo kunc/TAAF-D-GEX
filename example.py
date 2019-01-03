@@ -105,6 +105,7 @@ model.compile(optimizer=optimizer, loss='mean_absolute_error', )
 model.summary()
 
 
+exit()
 # set up training
 log_dir = f'./logs/{model_name}/'
 os.makedirs(log_dir, exist_ok=True)
