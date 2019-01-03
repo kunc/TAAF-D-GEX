@@ -44,7 +44,7 @@ The example data represent a small subset of inferred target gene with
  without GPU acceleration or using a laptop GPU.
 
 #### Classical network
-![Visualization of architecture with classical activation functions](https://github.com/kunc/TAAF-D-GEX/tree/master/models/classical_demonstrator_small/classical_demonstrator_small_visualization.png "[Visualization of architecture with classical activation functions")
+![Visualization of architecture with classical activation functions](https://github.com/kunc/TAAF-D-GEX/raw/master/models/classical_demonstrator_small/classical_demonstrator_small_visualization.png "[Visualization of architecture with classical activation functions")
 
 ```
 Layer (type)                 Output Shape              Param #
@@ -69,7 +69,7 @@ _________________________________________________________________
 ```
 
 #### TAAF network
-![Visualization of architecture with TAAFs](https://github.com/kunc/TAAF-D-GEX/tree/master/models/TAAF_demonstrator_small/TAAF_demonstrator_small_visualization.png "[Visualization of architecture with TAAFs")
+![Visualization of architecture with TAAFs](https://github.com/kunc/TAAF-D-GEX/raw/master/models/TAAF_demonstrator_small/TAAF_demonstrator_small_visualization.png "[Visualization of architecture with TAAFs")
 
 ```
 Layer (type)                 Output Shape              Param #
@@ -119,7 +119,7 @@ introducing bias to the test results. Here only two sets are used thus
 we present the results for all epochs and the minimum reached during
 on the test data.
 
-![MAE during training](https://github.com/kunc/TAAF-D-GEX/tree/master/example_data/figures/MAE.png "[MAE during training")
+![MAE during training](https://github.com/kunc/TAAF-D-GEX/raw/master/example_data/figures/MAE.png "[MAE during training")
 
 The plot above shows performance of both network during the whole
 training (the MAE on the training data is dashed and on testing data solid).
